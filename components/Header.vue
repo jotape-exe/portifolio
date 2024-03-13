@@ -12,7 +12,7 @@
         </NuxtLink>
 
         <button @click="toggleActive = !toggleActive" data-collapse-toggle="navbar-default" type="button"
-          class="inline-flex items-center md:hidden bg-zinc-50  dark:bg-zinc-900  p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-zinc-500 dark:focus:ring-gray-600"
+          class="inline-flex items-center md:hidden bg-zinc-50  dark:bg-zinc-900  p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-zinc-500 dark:focus:ring-gray-600"
           aria-controls="navbar-default" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
           <Icon v-if="!toggleActive" class="text-2xl" name="ph:list" />
@@ -22,16 +22,25 @@
 
         <div class="hidden md:flex">
 
-          <NuxtLink to="/projects">
-            <Button class="flex items-center justify-center">
-          <template #first-icon>
-            <Icon class="text-2xl mr-3" name="ph:layout-fill" />
-          </template>
-          <template #text>
-            Projects
-          </template>
+          <NuxtLink to="/" class="mr-2">
+            <Button class="flex items-center justify-center rounded-sm">
+              <template #first-icon>
+                <Icon class="text-2xl" name="ph:house-fill" />
+              </template>
+            </Button>
+          </NuxtLink>
+          
 
-        </Button>
+          <NuxtLink to="/projects">
+            <Button rounded="xl" class="flex items-center justify-center">
+              <template #first-icon>
+                <Icon class="text-2xl mr-3" name="ph:layout-fill" />
+              </template>
+              <template #text>
+                Projects
+              </template>
+
+            </Button>
           </NuxtLink>
           <button
             class="ml-5 flex items-center focus:outline-none focus:ring-2 focus:ring-gray-200 justify-center bg-gray-100 p-2 rounded-md shadow-md dark:bg-zinc-900"
@@ -51,20 +60,18 @@
       </div>
     </header>
     <div v-if="toggleActive" :class="{ 'slide-in-down': toggleActive, 'slide-out-up': !toggleActive }"
-      class="bg-zinc-50 mt-24 fixed top-0 right-0 left-0 rounded-sm shadow-md dark:bg-zinc-600 m-5 p-3 flex flex-col">
-      <ul class="text-xl space-y-4 font-bold">
-        <li @click="$router.push('/')" class=" hover:bg-zinc-50 hover:text-black cursor-pointer p-2 rounded-md">
+      class="bg-zinc-50 md:hidden mt-24 fixed top-0 right-0 left-0 rounded-sm shadow-md dark:bg-zinc-600 m-5 p-3 flex flex-col">
+      <ul class="text-xl  w-full  flex items-center justify-center flex-col space-y-4 font-bold">
+        <li @click="$router.push('/')" class=" hover:bg-zinc-300 hover:text-black  w-full text-center cursor-pointer p-2 rounded-md">
           Home
         </li>
-        <li @click="$router.push('/projects')"
-          class=" hover:bg-zinc-50 hover:text-black cursor-pointer p-2 rounded-md">
+        <li @click="$router.push('/projects')" class=" hover:bg-zinc-300 hover:text-black w-full text-center  cursor-pointer p-2 rounded-md">
           Projetos
         </li>
 
         <li class="flex">
-          {{ $colorMode.preference.toUpperCase() }} Mode
           <button
-            class="ml-5 flex items-center  focus:outline-none focus:ring-2 focus:ring-gray-200 justify-center bg-gray-100 p-2 rounded-md shadow-md dark:bg-zinc-900"
+            class="flex items-center  focus:outline-none focus:ring-2 focus:ring-gray-200 justify-center bg-gray-100 p-2 rounded-md shadow-md dark:bg-zinc-900"
             @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')">
             <svg v-if="$colorMode.value == 'dark'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-50"
               viewBox="0 0 20 20" fill="currentColor">
