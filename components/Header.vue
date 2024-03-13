@@ -1,7 +1,7 @@
 <template>
   <div>
     <header
-      class="fixed custom-bg top-0 left-0 border-b-2 border-zinc-900 w-full bg-transparent bg-opacity-30 backdrop-blur-lg py-1 px-6 shadow-md z-50">
+      class="fixed custom-bg top-0 left-0 border-b-2 border-zinc-900 dark:border-zinc-50 w-full bg-transparent bg-opacity-30 backdrop-blur-lg py-1 px-6 shadow-md z-50">
       <div class="container mx-auto flex items-center justify-between">
         <NuxtLink to="/" class="flex flex-col active:bg-slate-200  active:bg-opacity-20 rounded-lg p-3">
           <div class="flex items-center justify-center">
