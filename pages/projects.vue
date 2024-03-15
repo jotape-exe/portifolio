@@ -12,14 +12,14 @@ const route = useRoute();
 
 const projects = [
   {
-
     company: {
-      name: 'joaoxstone',
+      name: 'Vince',
       img: ''
     },
     office: 'Mobile Developer',
     dateInterval: '06/2023 - Current',
     description: 'descrição das minhas atividades como mobile',
+    link: 'https://play.google.com/store/apps/details?id=com.company.ourfinances',
     icons: ['simple-icons:kotlin', 'simple-icons:androidstudio', 'simple-icons:android']
   },
   {
@@ -30,6 +30,7 @@ const projects = [
     office: 'Front-End Developer',
     dateInterval: '10/2023 - Current',
     description: 'descrição das minhas atividades',
+    link: 'https://izapay.com.br/',
     icons: ['simple-icons:vuedotjs', 'simple-icons:nuxtdotjs', 'simple-icons:javascript']
   }, {
     company: {
@@ -39,6 +40,7 @@ const projects = [
     office: 'Front-End Developer',
     dateInterval: '02/2024 - Current',
     description: 'descrição das minhas atividades',
+    link: 'https://izacontent.netlify.app/',
     icons: ['simple-icons:vuedotjs', 'simple-icons:nuxtdotjs', 'simple-icons:javascript']
   }]
 
