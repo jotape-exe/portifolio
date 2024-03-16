@@ -1,5 +1,5 @@
 <template>
-  <div class="p-1 rounded-lg shadow-md">
+  <div class="p-1 rounded-lg shadow-md flex flex-col  justify-between">
     <h1 class="text-2xl p-4 bg-zinc-100 dark:bg-zinc-600 custom-radius shadow-sm">
       {{ project.office }}
     </h1>
