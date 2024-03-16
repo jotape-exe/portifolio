@@ -12,7 +12,6 @@
         </Button>
       </NuxtLink>
     </div>
-    <!--<SkillsSection />-->
   </div>
 </template>
 
@@ -26,14 +25,10 @@ definePageMeta({
   pageTransition: true
 })
 
-
 useSeoMeta({
   title: 'Home'
 })
-onMounted(() => {
-  console.log(route.fullPath);
 
-})
 </script>
 
 <style></style>

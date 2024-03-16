@@ -3,6 +3,8 @@
     "home": "Home",
     "projects": "Projects",
     "showProjects": "Show Projects",
+    "frontend":"Front-End Developer",
+    "mobile": "Mobile Developer",
     "heroAbout": {
         "line1": "I'm a software developer passionate about creating useful and powerful solutions that fit in the palm of your hand!",
         "line2": "I started my career in 2021, and since then, I've been accumulating experiences, skills, and connections! I mainly use Kotlin, VUE, and NUXT in my projects.",
@@ -19,17 +21,14 @@
     },
     "projectsData": {
         "vince": {
-            "office": "Mobile Developer",
             "dateInterval": "06/2023 - Current",
             "description": "This application aims to help the user control their finances in an uncomplicated and safe way. I created an intuitive UI to facilitate transaction management using Android MDC features."
         },
         "izapay": {
-            "office": "Front-End Developer",
             "dateInterval": "10/2023 - Current",
             "description": "Responsible for creating management screens for financial and administrative operations, such as pix generation with QR Code and expiration time, complex tables with transactional data, handling multiple simultaneous http requests and all application state management."
         },
         "content": {
-            "office": "Front-End Developer",
             "dateInterval": "02/2024 - Current",
             "description": "I developed the UI of a markdown/yaml content platform, also providing a system for acquiring content in simple, quick and secure ways through subscription plans, where I used NUXT 3 composables to guarantee security in each access to the platform."
         }

@@ -47,11 +47,6 @@ import ES from '@/components/ES.vue';
 
 const { locale } = useI18n()
 
-const langFlags = {
-  'pt-BR': h('div', BR),
-  'en-US': US,
-  'es-ES': ES
-}
 const dropdownOpen = ref(false)
 
 const setlagunage = (lang: string) => {

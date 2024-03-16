@@ -100,27 +100,14 @@
 
 <script lang="ts" setup>
 
-const colorMode = useColorMode()
 const toggleActive = ref(false)
 
 type Theme = 'light' | 'dark';
-
-const router = useRouter();
-const route = useRoute();
-
 
 const setColorTheme = (newTheme: Theme) => {
   useColorMode().preference = newTheme
 }
 
-const handleSelectLang = () => {
-  return ''
-}
-
-onMounted(() => {
-  console.log(route.fullPath);
-
-})
 </script>
 
 <style>
