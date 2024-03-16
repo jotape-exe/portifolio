@@ -10,6 +10,7 @@
           </div>
           <div class="bg-slate-400 dark:bg-slate-50 h-0.5 w-28 mt-3"></div>
         </NuxtLink>
+        
 
         <button @click="toggleActive = !toggleActive" data-collapse-toggle="navbar-default" type="button"
           class="inline-flex items-center md:hidden bg-zinc-50  dark:bg-zinc-900  p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-zinc-500 dark:focus:ring-gray-600"
@@ -29,7 +30,7 @@
               </template>
             </Button>
           </NuxtLink>
-          
+
 
           <NuxtLink to="/projects">
             <Button rounded="xl" class="flex items-center justify-center">
@@ -37,11 +38,12 @@
                 <Icon class="text-2xl mr-3" name="ph:layout-fill" />
               </template>
               <template #text>
-                Projects
+                {{ $t('projects') }}
               </template>
 
             </Button>
           </NuxtLink>
+          <div class=" flex items-center justify-center space-x-2">
           <button
             class="ml-5 flex items-center focus:outline-none focus:ring-2 focus:ring-gray-200 justify-center bg-gray-100 p-2 rounded-md shadow-md dark:bg-zinc-900"
             @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')">
@@ -55,6 +57,8 @@
                 clip-rule="evenodd" />
             </svg>
           </button>
+          <DropdownLanguage />
+          </div>
         </div>
 
       </div>
@@ -62,11 +66,13 @@
     <div v-if="toggleActive" :class="{ 'slide-in-down': toggleActive, 'slide-out-up': !toggleActive }"
       class="bg-zinc-50 md:hidden mt-24 fixed top-0 right-0 left-0 rounded-sm shadow-md dark:bg-zinc-600 m-5 p-3 flex flex-col">
       <ul class="text-xl  w-full  flex items-center justify-center flex-col space-y-4 font-bold">
-        <li @click="$router.push('/')" class=" hover:bg-zinc-300 hover:text-black  w-full text-center cursor-pointer p-2 rounded-md">
-          Home
+        <li @click="$router.push('/')"
+          class=" hover:bg-zinc-300 hover:text-black  w-full text-center cursor-pointer p-2 rounded-md">
+          {{ $t('home').toUpperCase() }}
         </li>
-        <li @click="$router.push('/projects')" class=" hover:bg-zinc-300 hover:text-black w-full text-center  cursor-pointer p-2 rounded-md">
-          Projetos
+        <li @click="$router.push('/projects')"
+          class=" hover:bg-zinc-300 hover:text-black w-full text-center  cursor-pointer p-2 rounded-md">
+          {{ $t('projects').toUpperCase() }}
         </li>
 
         <li class="flex">
@@ -84,12 +90,16 @@
             </svg>
           </button>
         </li>
+        <li>
+          <DropdownLanguage />
+        </li>
       </ul>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+
 const colorMode = useColorMode()
 const toggleActive = ref(false)
 
@@ -101,6 +111,10 @@ const route = useRoute();
 
 const setColorTheme = (newTheme: Theme) => {
   useColorMode().preference = newTheme
+}
+
+const handleSelectLang = () => {
+  return ''
 }
 
 onMounted(() => {

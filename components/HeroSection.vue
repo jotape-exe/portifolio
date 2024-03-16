@@ -15,13 +15,13 @@
       </NuxtLink>
     </div>
     <div class="console">
-      <pre><span class="blink-caret text-rose-300">$</span> Sou um desenvolvedor de software apaixonado por criar soluções utéis e poderosas que cabem na palma da sua mão!
+      <pre><span class="blink-caret text-rose-300">$</span> {{ $t("heroAbout.line1") }}
       </pre>
-      <pre><span class="blink-caret text-rose-300">$</span> Comecei minha carreira em 2021, desde então coleciono experiências, habilidades e conexões! Utilizo principalmente Kotlin, VUE e NUXT em meus projetos.
+      <pre><span class="blink-caret text-rose-300">$</span> {{ $t('heroAbout.line2') }}
       </pre>
-      <pre><span class="blink-caret text-rose-300">$</span> Exploro novas tecnologias, mas também prezo muito pelos conhecimentos solidos na comunidade, como Clean Architecture, S.O.L.I.D e Padrões de Projetos.
+      <pre><span class="blink-caret text-rose-300">$</span> {{ $t('heroAbout.line3') }}
       </pre>
-      <pre><span class="blink-caret text-rose-300">$</span> Livros que me ajudaram:
+      <pre><span class="blink-caret text-rose-300">$</span> {{ $t('heroAbout.line4') }}:
    - <NuxtLink class="border-b-2" to="https://www.amazon.com.br/Entendendo-Algoritmos-Ilustrado-Programadores-Curiosos/dp/8575225634/ref=sr_1_1?crid=2WA4HGZ59DW1H&dib=eyJ2IjoiMSJ9.2bcGWnm39oy1cLyMccaaYvGetXLzklT3uhHg1TDOEA-uUr6e5BRB0nIyShMWTkjlJ4ApinE6XaTApX_-vZoDpaUtC0Ay0HVs02BJcsjJTOcyGvpRv4VPQv_0SllacB6JS6q7HYI8gZPrco9XrX5pf2FepUbXgkBWA4lHEIjQ9og1RcNMeXhg053lkL6VbjI2vbxmbWnbLi7CFbX6aGaxx5MNCsnU1-R-lVWvQ1G6VyI.a_vk0pPbdhPKivZqwYpFx3mEA-wQh6_qQkhTbGLKoGU&dib_tag=se&keywords=entendendo+algoritmos&qid=1710607689&s=books&sprefix=entend%2Cstripbooks%2C159&sr=1-1">Entendendo Algoritmos</NuxtLink>
    - <NuxtLink class="border-b-2" to="https://www.amazon.com.br/m%C3%ADtico-homem-m%C3%AAs-ensaios-engenharia-software/dp/8550802530">O mítico homem-mês</NuxtLink>
    - <NuxtLink class="border-b-2" to="https://www.amazon.com.br/Ultra-aprendizado-habilidades-valiosas-competi%C3%A7%C3%A3o-carreira/dp/6555110058/ref=sr_1_1?adgrpid=110121468434&dib=eyJ2IjoiMSJ9.dpRZ7e5S-54PFf8wRSPWhTUg-SZ0S-BDNBFWovNcYwi2bS95AjHdZfmvqsKhpZ3u0XUo3VfoGpnaSTsxuFQ9Oq5ByVGJu3sEoBSKG665Skt6R6_w0qZc7hCdjKUilt7gjQaaqUHRSQRnQxqTlzNXQaLozKEeI_yAj808NKYpGBoVhP3PItU4iutzO94fzL8Ft9zxS9-_9sTBCFcqML_Xepei7zDMp6d_kYUmAb1Kp0KuVTapuYSA5NHUcBtkZqOptRdgRpUneEewl14svBuEBcOb43bP46zdw0PTxffIrlI.i8nS5fWazoG5KSX8dLVXQJbfPX80N1XuA3Iarvcjn3M&dib_tag=se&gclid=Cj0KCQjwhtWvBhD9ARIsAOP0GojQj0trTQBA60db8nozlgDk5RsNNsohLnDrw7_amCjVqpcD_v1-2XwaAsDsEALw_wcB&hvadid=457998955394&hvdev=c&hvlocphy=1001506&hvnetw=g&hvqmt=e&hvrand=9526570931415262295&hvtargid=kwd-1184109887750&hydadcr=5627_11235151&keywords=ultra-aprendizado&qid=1710607434&sr=8-1">Ultra Aprendizado</NuxtLink>

@@ -14,7 +14,7 @@
     <!--<Icon name="uil:github" color="black" />-->
     <p class="p-2  text-base">{{ project.description }}</p>
     <div class=" space-x-2 p-1">
-      <strong class=" text-xs" v-for="tag in project.tags" :key="tag">#{{ tag }}</strong>
+      <strong class=" text-xs font-extrabold " v-for="tag in project.tags" :key="tag">#{{ tag }}</strong>
     </div>
 
     <div

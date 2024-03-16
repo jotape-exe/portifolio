@@ -1,0 +1,37 @@
+{
+    "contact": "Contato",
+    "home": "Home",
+    "projects": "Projetos",
+    "showProjects": "Ver Projetos",
+    "heroAbout": {
+        "line1": "Sou um desenvolvedor de software apaixonado por criar soluções utéis e poderosas que cabem na palma da sua mão!",
+        "line2": "Comecei minha carreira em 2021, desde então coleciono experiências, habilidades e conexões! Utilizo principalmente Kotlin, VUE e NUXT em meus projetos.",
+        "line3": "Exploro novas tecnologias, mas também prezo muito pelos conhecimentos solidos na comunidade, como Clean Architecture, S.O.L.I.D e Padrões de Projetos.",
+        "line4": "Livros que me ajudaram",
+        "books": {
+            "algorithms": "Entendendo Algoritmos",
+            "man-month": "O mítico homem-mês",
+            "ultralearning": "Ultra Aprensizado",
+            "patterns": "Padrões de Projeto",
+            "clean-code": "Código Limpo",
+            "clean-arch": "Arquitetura Limpa"
+        }
+    },
+    "projectsData": {
+        "vince": {
+            "office": "Desenvolvedor Mobile",
+            "dateInterval": "06/2023 - Atualmente",
+            "description": "Esta aplicação tem o intuito de ajudar o usuário a controlar suas finanças de maneira descomplicada, e segura. Criei uma interface intuitiva para facilitar o gerenciamento de transações usando recursos do Android MDC."
+        },
+        "izapay": {
+            "office": "Desenvolvedor Front-End",
+            "dateInterval": "10/2023 - Atualmente",
+            "description": "Responsável pela criação telas de gerenciamento de operações financeiras e admnistrativas, como geração de pix com QR Code e tempo de expiração, tabelas complexas com dados transacionais, tratamento de multiplas requisições simultâneas e todo gerenciamento do estado da aplicação."
+        },
+        "content": {
+            "office": "Desenvolvedor Front-End",
+            "dateInterval": "02/2024 - Atualmente",
+            "description": "Desenvolvi a UI de uma plataforma de conteúdos markdown/yaml, contanto também com um sistema de aquisição dos conteúdos de formas simples, rápida e segura por meio de planos de assinatura, onde utilizei composables do NUXT 3 para garantir a segurança em cada acesso a plataforma."
+        }
+    }
+}

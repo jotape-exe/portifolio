@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full h-screen">
+  <div class="h-full">
     <div class="grid-cols-1 grid md:grid-cols-3 gap-3">
       <CardProject v-for="project in projects" :key="project.office" :project="project" />
     </div>
@@ -9,6 +9,9 @@
 <script lang="ts" setup>
 const router = useRouter();
 const route = useRoute();
+import { useI18n } from '#imports';
+
+const { t } = useI18n()
 
 const projects = [
   {
@@ -16,9 +19,9 @@ const projects = [
       name: 'Vince',
       img: ''
     },
-    office: 'Mobile Developer',
-    dateInterval: '06/2023 - Atualmente',
-    description: 'Esta aplicação tem o intuito de ajudar o usuário a controlar suas finanças de maneira descomplicada, e segura. Criei uma Iiterface intuitiva para facilitar o gerenciamento de transações usando recursos do Android MDC.',
+    office: t("projectsData.vince.office"),
+    dateInterval: t("projectsData.vince.dateInterval"),
+    description: t("projectsData.vince.description"),
     tags: ['MVVM', 'ROOM', 'SQLITE', 'KOTLIN'],
     link: 'https://play.google.com/store/apps/details?id=com.company.ourfinances',
     icons: ['simple-icons:kotlin', 'simple-icons:androidstudio', 'simple-icons:android', 'simple-icons:materialdesign']
@@ -28,9 +31,9 @@ const projects = [
       name: 'Iza Pay',
       img: ''
     },
-    office: 'Front-End Developer',
-    dateInterval: '10/2023 - Current',
-    description: 'Responsável pela criação telas de gerenciamento de operações financeiras e admnistrativas, como geração de pix com QR Code e tempo de expiração, tabelas complexas com dados transacionais e tratamento de multiplas requisições simultâneas.',
+    office: t("projectsData.izapay.office"),
+    dateInterval: t("projectsData.izapay.dateInterval"),
+    description: t("projectsData.izapay.description"),
     tags: ['VUE', 'PINIA', 'CSS NINJA', 'BULMA'],
     link: 'https://izapay.com.br/',
     icons: ['simple-icons:vuedotjs', 'simple-icons:javascript', 'simple-icons:bulma']
@@ -39,9 +42,9 @@ const projects = [
       name: 'Iza Content',
       img: ''
     },
-    office: 'Front-End Developer',
-    dateInterval: '02/2024 - Current',
-    description: 'Desenvolvi a UI de uma plataforma de conteúdos markdown/yaml, contanto também com um sistema de aquisição dos conteúdos de formas simples, rápida e segura por meio de planos de assinatura, onde utilizei composables do NUXT 3 para garantir a segurança em cada acesso a plataforma.',
+    office: t("projectsData.content.office"),
+    dateInterval: t("projectsData.content.dateInterval"),
+    description: t("projectsData.content.description"),
     tags: ['NUXT', 'PINIA', 'NUXT UI', 'TAILWIND'],
     link: 'https://izacontent.netlify.app/',
     icons: ['simple-icons:vuedotjs', 'simple-icons:nuxtdotjs', 'simple-icons:javascript', 'simple-icons:tailwindcss']
