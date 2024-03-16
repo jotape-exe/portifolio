@@ -1,16 +1,22 @@
 <template>
   <div class="p-1 rounded-lg shadow-md flex flex-col  justify-between">
-    <h1 class="text-2xl p-4 bg-zinc-100 dark:bg-zinc-600 custom-radius shadow-sm">
-      {{ project.office }}
-    </h1>
-    <h2
-      class="text-lg font-bold pl-4 py-2 bg-zinc-700 text-white custom-radius-bottom  dark:bg-zinc-400 shadow-sm mb-3 ">
-      {{ project.company.name }}
-    </h2>
+    <div>
+      <h1 class="text-2xl p-4 bg-zinc-100 dark:bg-zinc-600 custom-radius shadow-sm">
+        {{ project.office }}
+      </h1>
+      <h2
+        class="text-lg font-bold pl-4 py-2 bg-zinc-700 text-white custom-radius-bottom  dark:bg-zinc-400 shadow-sm mb-3 ">
+        {{ project.company.name }}
+      </h2>
+    </div>
 
     <p class="pl-2 text-lg">{{ project.dateInterval }}</p>
     <!--<Icon name="uil:github" color="black" />-->
-    <p class="p-2"><strong class="text-lg">Resposavél por:</strong>{{ project.description }}</p>
+    <p class="p-2  text-base">{{ project.description }}</p>
+    <div class=" space-x-2 p-1">
+      <strong class=" text-xs" v-for="tag in project.tags" :key="tag">#{{ tag }}</strong>
+    </div>
+
     <div
       class="flex space-x-3 text-xl py-2 dark:bg-zinc-600  border-t-2 items-center custom-radius-bottom bg-zinc-100 justify-between border-zinc-300 pl-2">
       <span class="flex space-x-3 text-xl py-2">
