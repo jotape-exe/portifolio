@@ -6,7 +6,7 @@
         <NuxtLink to="/" class="flex flex-col active:bg-slate-200  active:bg-opacity-20 rounded-lg p-3">
           <div class="flex items-center justify-center">
             <Icon class="mr-2 text-4xl dark:text-white" name="ph:terminal-window" />
-            <h1 class="text-3xl dark:text-white">João Pedro</h1>
+            <h1 class="text-xl dark:text-white">Hello World</h1>
           </div>
           <div class="bg-slate-400 dark:bg-slate-50 h-0.5 w-28 mt-3"></div>
         </NuxtLink>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bottom-0 self-end justify-end">
     <footer class="bg-zinc-200 py-8 dark:bg-zinc-800  w-full px-10 shadow-md z-50">
       <h3 class="mb-4 text-2xl border-b-2 border-zinc-900 dark:border-zinc-200 w-20">CONTACT</h3>
       <div class="flex items-center justify-between w-full">

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-screen" >
     <HeroSection />
     <div class="w-full mb-7 flex p-7 items-center justify-center">
       <NuxtLink to="/projects">
