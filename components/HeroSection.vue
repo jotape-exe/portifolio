@@ -1,6 +1,6 @@
 <template>
   <section class="font-mono flex rounded-xl items-center flex-col justify-start  p-4 shadow-xl">
-    <img src="/images/joao.jpg" class="w-24 shadow-lg mb-2 rounded-full h-24" />
+    <img src="/images/me.jpeg" class="w-24 shadow-lg mb-2 rounded-full h-24" />
     <h1 class="text-2xl sm:text-5xl mb-1 text-center font-extrabold">João Pedro</h1>
     <div class="mb-4 flex space-x-2">
       <NuxtLink to="https://github.com/jotape-exe" target="_blank">

@@ -32,8 +32,8 @@
           </NuxtLink>
 
 
-          <NuxtLink to="/projects">
-            <Button rounded="xl" class="flex items-center justify-center">
+          <NuxtLink to="/projects" >
+            <Button rounded="xl" class="flex mr-2 items-center justify-center">
               <template #first-icon>
                 <Icon class="text-2xl mr-3" name="ph:layout-fill" />
               </template>
@@ -43,6 +43,19 @@
 
             </Button>
           </NuxtLink>
+
+          <!--
+          <NuxtLink to="/projects">
+            <Button variant="black" rounded="xl" class="flex items-center justify-center">
+              <template #first-icon>
+                <Icon class="text-2xl mr-3" name="uil:github" />
+              </template>
+              <template #text>
+                {{ $t('openSource') }}
+              </template>
+
+            </Button>
+          </NuxtLink>-->
           <div class=" flex items-center justify-center space-x-2">
           <button
             class="ml-5 flex items-center focus:outline-none focus:ring-2 focus:ring-gray-200 justify-center bg-gray-100 p-2 rounded-md shadow-md dark:bg-zinc-900"

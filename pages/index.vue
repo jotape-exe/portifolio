@@ -17,17 +17,11 @@
 
 <script lang="ts" setup>
 
-const router = useRouter();
-const route = useRoute();
-
-
 definePageMeta({
   pageTransition: true
 })
 
-useSeoMeta({
-  title: 'Home'
-})
+
 
 </script>
 

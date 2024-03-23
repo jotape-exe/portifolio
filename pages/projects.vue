@@ -94,7 +94,7 @@ definePageMeta({
 })
 
 useSeoMeta({
-  title: 'Projects'
+  title: `João Pedro • ${t('projects')}`
 })
 </script>
 

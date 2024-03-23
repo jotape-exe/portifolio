@@ -32,5 +32,6 @@
             "dateInterval": "02/2024 - Actualidad",
             "description": "Desarrollé la interfaz de usuario de una plataforma de contenido markdown/yaml, también proporcionando un sistema para adquirir contenido de manera simple, rápida y segura a través de planes de suscripción, donde utilicé composables NUXT 3 para garantizar la seguridad en cada acceso a la plataforma."
         }
-    }
+    },
+    "openSource": "Open Source"
 }

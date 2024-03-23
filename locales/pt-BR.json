@@ -32,5 +32,6 @@
             "dateInterval": "02/2024 - Atualmente",
             "description": "Desenvolvi a UI de uma plataforma de conteúdos markdown/yaml, contanto também com um sistema de aquisição dos conteúdos de formas simples, rápida e segura por meio de planos de assinatura, onde utilizei composables do NUXT 3 para garantir a segurança em cada acesso a plataforma."
         }
-    }
+    },
+    "openSource": "Open Source"
 }
