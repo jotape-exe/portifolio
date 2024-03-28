@@ -44,7 +44,7 @@
             </Button>
           </NuxtLink>
 
-          <!--
+          <!--TODO
           <NuxtLink to="/projects">
             <Button variant="black" rounded="xl" class="flex items-center justify-center">
               <template #first-icon>

@@ -5,13 +5,18 @@
     <div class="mb-4 flex space-x-2">
       <NuxtLink to="https://github.com/jotape-exe" target="_blank">
         <Icon
-          class="text-4xl p-1 cursor-pointer bg-slate-500 bg-opacity-55 rounded-full hover:text-white hover:bg-slate-700"
+          :class="iconStyle"
           name="mdi:github" />
       </NuxtLink>
       <NuxtLink to="mailto:joaoxstone@gmail.com" target="_blank">
         <Icon
-          class="text-4xl p-1 cursor-pointer bg-slate-500 bg-opacity-55 rounded-full hover:text-white hover:bg-slate-700"
+          :class="iconStyle"
           name="ph:envelope" />
+      </NuxtLink>
+      <NuxtLink to="https://g.dev/joaoxstone" target="_blank">
+        <Icon
+          :class="iconStyle"
+          name="simple-icons:google" />
       </NuxtLink>
     </div>
     <div class="console">
@@ -35,6 +40,8 @@
 </template>
 
 <script setup>
+
+const iconStyle = "text-3xl lg:text-4xl p-1 cursor-pointer bg-zinc-500 bg-opacity-55 rounded-full hover:text-white hover:bg-slate-700"
 
 </script>
 

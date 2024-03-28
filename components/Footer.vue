@@ -8,8 +8,6 @@
             class="text-4xl p-1 cursor-pointer bg-slate-500 bg-opacity-55 rounded-full hover:text-white hover:bg-slate-700"
             name="mdi:github" />
         </NuxtLink>
-
-
         <div class="flex space-x-2">
           <NuxtLink to="https://www.instagram.com/joaoxstone" target="_blank">
             <Icon
