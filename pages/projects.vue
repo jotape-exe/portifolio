@@ -23,7 +23,7 @@ const projects = ref<any[]>([
     description: t("projectsData.vince.description"),
     tags: ['MVVM', 'ROOM', 'SQLITE', 'KOTLIN'],
     link: 'https://play.google.com/store/apps/details?id=com.company.ourfinances',
-    icons: ['simple-icons:kotlin', 'simple-icons:androidstudio', 'simple-icons:android', 'simple-icons:materialdesign']
+    icons: ['simple-icons:kotlin', 'simple-icons:androidstudio', 'simple-icons:android', 'simple-icons:materialdesign'],
   },
   {
     company: {
@@ -33,7 +33,7 @@ const projects = ref<any[]>([
     office: t("frontend"),
     dateInterval: t("projectsData.izapay.dateInterval"),
     description: t("projectsData.izapay.description"),
-    tags: ['VUE', 'PINIA', 'CSS NINJA', 'BULMA'],
+    tags: ['VUE', 'PINIA', 'CSSNINJA', 'BULMA'],
     link: 'https://iza.tec.br/pay',
     icons: ['simple-icons:vuedotjs', 'simple-icons:javascript', 'simple-icons:bulma']
   }, {
@@ -70,7 +70,7 @@ watch(locale, () => {
       office: t("frontend"),
       dateInterval: t("projectsData.izapay.dateInterval"),
       description: t("projectsData.izapay.description"),
-      tags: ['VUE', 'PINIA', 'CSS NINJA', 'BULMA'],
+      tags: ['VUE', 'PINIA', 'CSSNINJA', 'BULMA'],
       link: 'https://iza.tec.br/pay',
       icons: ['simple-icons:vuedotjs', 'simple-icons:javascript', 'simple-icons:bulma']
     }, {
@@ -81,7 +81,7 @@ watch(locale, () => {
       office: t("frontend"),
       dateInterval: t("projectsData.content.dateInterval"),
       description: t("projectsData.content.description"),
-      tags: ['NUXT', 'PINIA', 'NUXT UI', 'TAILWIND'],
+      tags: ['NUXT', 'PINIA', 'NUXTUI', 'TAILWIND'],
       link: 'https://iza.tec.br/content',
       icons: ['simple-icons:vuedotjs', 'simple-icons:nuxtdotjs', 'simple-icons:javascript', 'simple-icons:tailwindcss']
     }]

@@ -30,8 +30,6 @@
         </Button>
       </NuxtLink>
 
-      <!--<Icon name="simple-icons:javascript" />
-        <Icon name="simple-icons:kotlin" />-->
     </div>
   </div>
 </template>
@@ -44,6 +42,7 @@ const props = defineProps(["project"])
 function openLink(link: string) {
   window.open(link, '_blank')
 }
+
 </script>
 
 <style>
