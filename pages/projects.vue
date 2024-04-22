@@ -34,7 +34,7 @@ const projects = ref<any[]>([
     dateInterval: t("projectsData.izapay.dateInterval"),
     description: t("projectsData.izapay.description"),
     tags: ['VUE', 'PINIA', 'CSS NINJA', 'BULMA'],
-    link: 'https://izapay.com.br/',
+    link: 'https://iza.tec.br/pay',
     icons: ['simple-icons:vuedotjs', 'simple-icons:javascript', 'simple-icons:bulma']
   }, {
     company: {
@@ -45,7 +45,7 @@ const projects = ref<any[]>([
     dateInterval: t("projectsData.content.dateInterval"),
     description: t("projectsData.content.description"),
     tags: ['NUXT', 'PINIA', 'NUXT UI', 'TAILWIND'],
-    link: 'https://izacontent.netlify.app/',
+    link: 'https://iza.tec.br/content',
     icons: ['simple-icons:vuedotjs', 'simple-icons:nuxtdotjs', 'simple-icons:javascript', 'simple-icons:tailwindcss']
   }])
 watch(locale, () => {
@@ -71,7 +71,7 @@ watch(locale, () => {
       dateInterval: t("projectsData.izapay.dateInterval"),
       description: t("projectsData.izapay.description"),
       tags: ['VUE', 'PINIA', 'CSS NINJA', 'BULMA'],
-      link: 'https://izapay.com.br/',
+      link: 'https://iza.tec.br/pay',
       icons: ['simple-icons:vuedotjs', 'simple-icons:javascript', 'simple-icons:bulma']
     }, {
       company: {
@@ -82,7 +82,7 @@ watch(locale, () => {
       dateInterval: t("projectsData.content.dateInterval"),
       description: t("projectsData.content.description"),
       tags: ['NUXT', 'PINIA', 'NUXT UI', 'TAILWIND'],
-      link: 'https://izacontent.netlify.app/',
+      link: 'https://iza.tec.br/content',
       icons: ['simple-icons:vuedotjs', 'simple-icons:nuxtdotjs', 'simple-icons:javascript', 'simple-icons:tailwindcss']
     }]
 })
