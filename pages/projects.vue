@@ -48,6 +48,7 @@ const projects = ref<any[]>([
     link: 'https://iza.tec.br/content',
     icons: ['simple-icons:vuedotjs', 'simple-icons:nuxtdotjs', 'simple-icons:javascript', 'simple-icons:tailwindcss']
   }])
+
 watch(locale, () => {
   projects.value = [
     {

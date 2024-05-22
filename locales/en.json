@@ -7,7 +7,7 @@
     "mobile": "Mobile Developer",
     "heroAbout": {
         "line1": "I'm a software developer passionate about creating useful and powerful solutions that fit in the palm of your hand!",
-        "line2": "I started my career in 2021, and since then, I've been accumulating experiences, skills, and connections! I mainly use Kotlin, VUE, and NUXT in my projects.",
+        "line2": "I started my career in 2021, and since then, I've been accumulating experiences, skills, and connections! I mainly use Kotlin, VUE/NUXT and React Native in my projects.",
         "line3": "I explore new technologies, but I also value solid knowledge within the community, such as Clean Architecture, S.O.L.I.D, and Design Patterns.",
         "line4": "Books that helped me",
         "books": {
