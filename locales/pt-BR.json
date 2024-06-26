@@ -31,6 +31,10 @@
         "content": {
             "dateInterval": "02/2024 - Atualmente",
             "description": "Desenvolvi a UI de uma plataforma de conteúdos markdown/yaml, contanto também com um sistema de aquisição dos conteúdos de formas simples, rápida e segura por meio de planos de assinatura, onde utilizei composables do NUXT 3 para garantir a segurança em cada acesso a plataforma."
+        },
+        "stoneroyale" : {
+            "dateInterval": "Open Source",
+            "description": "Aplicação de código aberto desenvolvida em Kotlin com Jetpack Compose, com o intuito de explorar o ecossistema da biblioteca e do Android framework. Nela, consumi a API do jogo Clash Royale, onde pude simplificar o processo de busca de perfis e grupos de jogadores e elementos correlatos, além de explorar animações do Android para deixar a UI mais agradável e intuitiva."
         }
     },
     "openSource": "Open Source"

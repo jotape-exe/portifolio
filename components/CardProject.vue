@@ -1,11 +1,11 @@
 <template>
-  <div class="p-1 rounded-lg shadow-md flex flex-col  justify-between">
+  <div class="p-1 rounded-lg shadow-2xl flex flex-col  justify-between">
     <div>
-      <h1 class="text-2xl p-4 bg-zinc-100 dark:bg-zinc-600 custom-radius shadow-sm">
+      <h1 class="text-2xl p-4 bg-zinc-100 dark:bg-zinc-800 custom-radius shadow-sm">
         {{ project.office }}
       </h1>
       <h2
-        class="text-lg font-bold pl-4 py-2 bg-zinc-700 text-white custom-radius-bottom  dark:bg-zinc-400 shadow-sm mb-3 ">
+        class="text-lg font-bold pl-4 py-2 bg-zinc-700 text-white dark:text-zinc-900 custom-radius-bottom  dark:bg-zinc-200 shadow-sm mb-3 ">
         {{ project.company.name }}
       </h2>
     </div>
@@ -22,13 +22,22 @@
       <span class="flex space-x-3 text-xl py-2">
         <Icon v-for="icon in project.icons" :key="icon" :name="icon" />
       </span>
-      <NuxtLink :to="project.link" target="_blank">
-        <Button class="pr-2">
-          <template #text>
-            <Icon name="uil:arrow-right" />
-          </template>
-        </Button>
-      </NuxtLink>
+      <div class=" flex items-center justify-center">
+        <NuxtLink v-if="project.link" :to="project.link" target="_blank">
+          <Button class="pr-2">
+            <template #text>
+              <Icon name="uil:arrow-right" />
+            </template>
+          </Button>
+        </NuxtLink>
+        <NuxtLink v-if="project.github" :to="project.github"  target="_blank" >
+          <Button variant="black" rounded="xl" class="pr-2">
+            <template #text>
+              <Icon class="text-xl" name="uil:github" />
+            </template>
+          </Button>
+        </NuxtLink>
+      </div>
 
     </div>
   </div>

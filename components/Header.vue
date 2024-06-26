@@ -10,7 +10,7 @@
           </div>
           <div class="bg-slate-400 dark:bg-slate-50 h-0.5 w-28 mt-3"></div>
         </NuxtLink>
-        
+
 
         <button @click="toggleActive = !toggleActive" data-collapse-toggle="navbar-default" type="button"
           class="inline-flex items-center md:hidden bg-zinc-50  dark:bg-zinc-900  p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-zinc-500 dark:focus:ring-gray-600"
@@ -32,7 +32,7 @@
           </NuxtLink>
 
 
-          <NuxtLink to="/projects" >
+          <NuxtLink to="/projects">
             <Button rounded="xl" class="flex mr-2 items-center justify-center">
               <template #first-icon>
                 <Icon class="text-2xl mr-3" name="ph:layout-fill" />
@@ -44,33 +44,21 @@
             </Button>
           </NuxtLink>
 
-          <!--TODO
-          <NuxtLink to="/projects">
-            <Button variant="black" rounded="xl" class="flex items-center justify-center">
-              <template #first-icon>
-                <Icon class="text-2xl mr-3" name="uil:github" />
-              </template>
-              <template #text>
-                {{ $t('openSource') }}
-              </template>
-
-            </Button>
-          </NuxtLink>-->
           <div class=" flex items-center justify-center space-x-2">
-          <button
-            class="ml-5 flex items-center focus:outline-none focus:ring-2 focus:ring-gray-200 justify-center bg-gray-100 p-2 rounded-md shadow-md dark:bg-zinc-900"
-            @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')">
-            <svg v-if="$colorMode.value == 'dark'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-50"
-              viewBox="0 0 20 20" fill="currentColor">
-              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-            </svg>
-            <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                clip-rule="evenodd" />
-            </svg>
-          </button>
-          <DropdownLanguage />
+            <button
+              class="ml-5 flex items-center focus:outline-none focus:ring-2 focus:ring-gray-200 justify-center bg-gray-100 p-2 rounded-md shadow-md dark:bg-zinc-900"
+              @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')">
+              <svg v-if="$colorMode.value == 'dark'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-50"
+                viewBox="0 0 20 20" fill="currentColor">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+              </svg>
+              <svg v-else xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+            <DropdownLanguage />
           </div>
         </div>
 
@@ -86,6 +74,10 @@
         <li @click="$router.push('/projects')"
           class=" hover:bg-zinc-300 hover:text-black w-full text-center  cursor-pointer p-2 rounded-md">
           {{ $t('projects').toUpperCase() }}
+        </li>
+        <li @click="$router.push('/opensource')"
+          class=" hover:bg-zinc-300 hover:text-black w-full text-center  cursor-pointer p-2 rounded-md">
+          {{ $t('openSource').toUpperCase() }}
         </li>
 
         <li class="flex">
