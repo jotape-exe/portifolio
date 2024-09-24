@@ -30,7 +30,8 @@ const sizeOPTS = {
 
 const variants = {
     default : 'default',
-    black: 'black-btn'
+    black: 'black-btn',
+    simple: 'simple'
 }
 </script>
 
@@ -61,6 +62,25 @@ const variants = {
     cursor: pointer;
     color: #000;
     background-color: #fff;
+}
+
+.simple{
+    background-color: #00000000;
+    color: #000;
+    border: none
+}
+
+.dark .simple{
+    background-color: #00000000;
+    color: #fff;
+    border: none
+}
+
+.simple:hover{
+    transition-delay: 50ms;
+    cursor: pointer;
+    color: #000000;
+    background-color: #2727273d;
 }
 
 .black-btn{
