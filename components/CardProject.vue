@@ -1,24 +1,34 @@
 <template>
-  <div class="p-1 rounded-lg shadow-2xl flex flex-col  justify-between">
+  <component>
+    <div class="p-1 rounded-lg shadow-2xl flex flex-col  justify-between">
     <div>
-      <h1 class="text-2xl p-4 bg-zinc-100 dark:bg-zinc-800 custom-radius shadow-sm">
+      <h1 class="text-base font-bold p-1 bg-zinc-100 dark:bg-zinc-800 custom-radius shadow-sm">
         {{ project.office }}
       </h1>
-      <h2
-        class="text-lg font-bold pl-4 py-2 bg-zinc-700 text-white dark:text-zinc-900 custom-radius-bottom  dark:bg-zinc-200 shadow-sm mb-3 ">
-        {{ project.company.name }}
-      </h2>
+      <div
+        class="flex justify-between py-[1.9px] px-2 mb-3 space-x-3 items-center w-full bg-zinc-700 dark:bg-zinc-700 shadow-sm dark:text-zinc-900 custom-radius-bottom dark:bg-opacity-70 bg-opacity-80">
+        <h2 class="text-md text-white ">
+          {{ project.company.name }}
+        </h2>
+        <p class="text-sm text-zinc-50 font-thin opacity-70">{{ project.dateInterval }}</p>
+      </div>
     </div>
 
-    <p class="pl-2 text-lg">{{ project.dateInterval }}</p>
-    <!--<Icon name="uil:github" color="black" />-->
-    <p class="p-2  text-base">{{ project.description }}</p>
+
+    <div class=" flex flex-col">
+      <p class="p-1 text-sm" :class="expanded ? '' : 'line-clamp-2'">{{ project.description }}</p>
+      <Button @click="toggleExpanded" variant="simple" rounded="xl" class="pr-2">
+        <template #text>
+         <span class=" text-xs" >{{ expanded ? 'Menos' : 'Mais' }}</span> <Icon class="text-md" :class="expanded ? 'rotate-180' : ''" name="uil:angle-double-down" />
+        </template>
+      </Button>
+    </div>
     <div class=" space-x-2 p-1">
       <strong class=" text-xs font-extrabold " v-for="tag in project.tags" :key="tag">#{{ tag }}</strong>
     </div>
 
     <div
-      class="flex space-x-3 text-xl py-2 dark:bg-zinc-600  border-t-2 items-center custom-radius-bottom bg-zinc-100 justify-between border-zinc-300 pl-2">
+      class="flex space-x-3 text-xl py-2 dark:bg-zinc-900  border-t-2 items-center custom-radius-bottom bg-zinc-100 justify-between border-zinc-300 pl-2">
       <span class="flex space-x-3 text-xl py-2">
         <Icon v-for="icon in project.icons" :key="icon" :name="icon" />
       </span>
@@ -30,7 +40,7 @@
             </template>
           </Button>
         </NuxtLink>
-        <NuxtLink v-if="project.github" :to="project.github"  target="_blank" >
+        <NuxtLink v-if="project.github" :to="project.github" target="_blank">
           <Button variant="black" rounded="xl" class="pr-2">
             <template #text>
               <Icon class="text-xl" name="uil:github" />
@@ -41,16 +51,19 @@
 
     </div>
   </div>
+  </component>
 </template>
 
 <script lang="ts" setup>
 
 
 const props = defineProps(["project"])
+const expanded = ref(false)
 
-function openLink(link: string) {
-  window.open(link, '_blank')
+const toggleExpanded = () => {
+  expanded.value =!expanded.value
 }
+
 
 </script>
 
