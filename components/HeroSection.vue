@@ -1,7 +1,8 @@
 <template>
   <section class="font-mono flex rounded-xl items-center flex-col justify-start  p-4 shadow-xl">
     <img src="/images/me.jpeg" class="w-24 shadow-lg mb-2 rounded-full h-24" />
-    <h1 class="text-2xl sm:text-5xl mb-1 text-center font-extrabold">João Pedro</h1>
+    <h1 class="text-xs sm:text-5xl mb-1 text-center font-extrabold">
+    </h1>
     <div class="mb-4 flex space-x-2">
       <NuxtLink to="https://github.com/jotape-exe" target="_blank">
         <Icon
@@ -20,6 +21,15 @@
       </NuxtLink>
     </div>
     <div class="console">
+      <pre  class="text-[0.5rem] text-center " >
+       _                     _____         _           
+      | |                   |  __ \       | |          
+      | | ___   __ _  ___   | |__) |__  __| |_ __ ___  
+  _   | |/ _ \ / _` |/ _ \  |  ___/ _ \/ _` | '__/ _ \ 
+ | |__| | (_) | (_| | (_) | | |  |  __/ (_| | | | (_) |
+  \____/ \___/ \__,_|\___/  |_|   \___|\__,_|_|  \___/ 
+                                                       
+      </pre>
       <pre><span class="blink-caret text-rose-300">$</span> {{ $t("heroAbout.line1") }}
       </pre>
       <pre><span class="blink-caret text-rose-300">$</span> {{ $t('heroAbout.line2') }}
