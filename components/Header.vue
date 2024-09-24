@@ -75,10 +75,6 @@
           class=" hover:bg-zinc-300 hover:text-black w-full text-center  cursor-pointer p-2 rounded-md">
           {{ $t('projects').toUpperCase() }}
         </li>
-        <li @click="$router.push('/opensource')"
-          class=" hover:bg-zinc-300 hover:text-black w-full text-center  cursor-pointer p-2 rounded-md">
-          {{ $t('openSource').toUpperCase() }}
-        </li>
 
         <li class="flex">
           <button
