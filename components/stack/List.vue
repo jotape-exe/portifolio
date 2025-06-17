@@ -57,8 +57,8 @@ onMounted(() => {
 }
 
 .stack-icon {
-  width: 2.1rem;
-  height: 2.1rem;
+  width: 1.8rem;
+  height: 1.8rem;
   border-radius: 0.2rem;
 }
 
@@ -66,7 +66,6 @@ onMounted(() => {
   .stack-card-list-grid {
     grid-template-columns: repeat(2, 1fr);
     justify-content: end;
-    /* Garante alinhamento à direita no layout de 2 colunas */
   }
 }
 
@@ -74,7 +73,6 @@ onMounted(() => {
   .stack-card-list-grid {
     grid-template-columns: 1fr;
     justify-content: end;
-    /* Garante alinhamento à direita no layout de 1 coluna */
   }
 }
 </style>

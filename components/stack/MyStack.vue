@@ -1,11 +1,11 @@
 <template>
   <div class="my-stack">
     <div class="stacks-header">
-      <h1>My Stacks</h1>
+      <h1>Minha Stack</h1>
       <AppDivider />
     </div>
     <div class="hero-container">
-      <h3 class="title-stack ">frontend</h3>
+      <h3 class="title-stack">frontend</h3>
       <StackList :stacks="frontend" />
     </div>
     <div class="hero-container">
@@ -31,16 +31,14 @@ const frontend = [
   { title: 'Pinia', icon: 'https://cdn.worldvectorlogo.com/logos/pinia-1.svg' },
   { title: 'Nuxt.js', icon: 'https://devicon-website.vercel.app/api/nuxtjs/original.svg' },
   { title: 'React', icon: 'https://icongr.am/devicon/react-original.svg?size=128&color=currentColor' },
-  { title: 'React Native', icon: 'https://cdn.worldvectorlogo.com/logos/react-native-1.svg' },
-  { title: 'Tailwind CSS', icon: 'https://devicon-website.vercel.app/api/tailwindcss/plain.svg' }
+  /* { title: 'React Native', icon: 'https://cdn.worldvectorlogo.com/logos/react-native-1.svg' },
+  { title: 'Tailwind CSS', icon: 'https://devicon-website.vercel.app/api/tailwindcss/plain.svg' }*/
 ];
 
 const backend = [
   { title: 'Java', icon: 'https://icongr.am/devicon/java-original.svg?size=128&color=currentColor' },
-  { title: 'Hyberbate', icon: 'https://cdn.worldvectorlogo.com/logos/hibernate.svg' },
   { title: 'Kotlin', icon: 'https://cdn.worldvectorlogo.com/logos/kotlin-2.svg' },
   { title: 'Spring', icon: 'https://devicon-website.vercel.app/api/spring/original.svg' },
-  { title: 'Junit', icon: 'https://junit.org/junit5/assets/img/junit5-logo.png' }
 ]
 
 const database = [
@@ -64,7 +62,7 @@ const tools = [
   align-items: flex-start;
   justify-content: center;
   width: 90%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .my-stack {
@@ -74,13 +72,14 @@ const tools = [
   justify-content: center;
   width: 100%;
   padding: 2rem;
+  margin-top: 6rem;
 }
 
 .title-stack {
-  font-size: 4rem;
-  font-weight: 600;
+  font-size: 3.2rem;
+  font-weight: 500;
   text-transform: uppercase;
-  margin-bottom: 0.5rem;
+  
 }
 
 .hero-container {
