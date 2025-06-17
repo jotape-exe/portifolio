@@ -1,17 +1,19 @@
 <template>
   <div class="my-stack">
     <div class="stacks-header">
-      <h1>My Experiences</h1>
+      <h1>Experiências</h1>
       <AppDivider />
     </div>
     <div class="hero-container">
-      <div class="card empty-card"></div>
+      <ExperienceList :data="experiences" />
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { MyExperiences } from '~/constants/my-experiences.constant';
 
+const experiences = MyExperiences
 </script>
 
 <style lang="css" scoped>
@@ -46,7 +48,7 @@
   justify-content: space-between;
   width: 90%;
   background-color: var(--background);
-  margin-top: 5rem;
+  margin-top: 1rem;
 }
 
 .empty-card {
