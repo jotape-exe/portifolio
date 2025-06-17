@@ -1,5 +1,8 @@
 <script setup lang="ts">
 
+const consoleText = `Desenvolvedor Fullstack especializado em criar interfaces responsivas e backends escaláveis, priorizando qualidade e desempenho.
+
+Com uma abordagem orientada ao usuário e resultados, entrego soluções criativas que unem tecnologia e negócios para experiências fluidas e impactantes.`
 
 </script>
 
@@ -10,7 +13,7 @@
   <section class="hero-container">
     <HeroTitle />
     <div class="scroll-container">
-      <div class="card empty-card"></div>
+      <ConsoleCard :text="consoleText" />
     </div>
   </section>
   <section>
@@ -34,7 +37,7 @@
   flex-direction: column;
   overflow-x: auto;
   display: flex;
-  gap: 0.4rem;
+
   align-items: center;
   justify-content: center;
 }

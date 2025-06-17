@@ -2,6 +2,7 @@
   <div class="layout-default" >
     <slot />
   </div>
+  <HeroFooter/>
 </template>
 
 <script lang="ts" setup>
