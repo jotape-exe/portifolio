@@ -1,17 +1,19 @@
 <template>
   <div class="my-stack">
     <div class="stacks-header">
-      <h1>My Projects</h1>
+      <h1>Projetos</h1>
       <AppDivider />
     </div>
     <div class="hero-container">
-      <div class="card empty-card"></div>
+      <ProjectsList :data="projects" />
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { MyProjects } from '~/constants/my-projects.constant';
 
+const projects = MyProjects
 </script>
 
 <style lang="css" scoped>
@@ -21,7 +23,6 @@
   align-items: flex-start;
   justify-content: center;
   width: 90%;
-  margin-bottom: 2rem;
 }
 
 .my-stack {
