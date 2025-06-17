@@ -1,13 +1,11 @@
 <template>
     <div class="hero">
         <div class="hero-title">
-            <h1 class="title">João</h1>
-            <p class="subtitle">Pedro</p>
+            <h1 class="title">JOÃO</h1>
+            <p class="subtitle">PEDRO</p>
         </div>
-
-        <button class="btn-primary">
-            <span>Get Started</span>
-        </button>
+        <AppDivider height="1px" color="var(--text-title)" />
+        <span class="developer-title anton-regular">FULLSTACK DEVELOPER</span>
     </div>
 </template>
 
@@ -20,8 +18,11 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
-    margin-top: 2rem;
     gap: 0rem;
+}
+
+.developer-title{
+    font-size: 4rem;
 }
 
 .hero {
@@ -30,16 +31,16 @@
 }
 
 .title {
-    font-size: 6rem;
+    font-size: 7rem;
     font-weight: bold;
     margin: 0;
     color: var(--text-title);
-    line-height: 2rem;
+    line-height: 1.8rem;
     text-align: end;
 }
 
 .subtitle {
-    font-size: 4.5rem;
+    font-size: 7rem;
     font-weight: bold;
     text-align: end;
     margin: 0;
