@@ -62,6 +62,7 @@
 
     /* Actions */
     --action-default: var(--blue-500);
+    --action-default-rgb: rgb(63, 131, 248);
     --action-hover: var(--blue-600);
     --action-pressed: var(--blue-600);
     --action-disabled: var(--gray-700);
