@@ -57,4 +57,25 @@ import { motion } from 'motion-v';
     color: var(--text-action);
     text-align: end;
 }
+
+@media (max-width: 768px) {
+
+    .hero-title {
+        align-items:center;
+    }
+
+    .title {
+        font-size: 4rem;
+        line-height: 1.8rem;
+
+    }
+
+    .subtitle {
+        font-size: 4rem;
+    }
+
+    .developer-title {
+        font-size: 2rem;
+    }
+}
 </style>

@@ -84,24 +84,40 @@ const tools = [
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 2.8rem;
   width: 100%;
   padding: 2rem;
-  margin-top: 6rem;
 }
 
 .title-stack {
   font-size: 3.2rem;
   font-weight: 500;
   text-transform: uppercase;
-
 }
 
 .hero-container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 90%;
   background-color: var(--background);
   margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+  .title-stack {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .hero-container {
+    margin-top: 2rem;
+  }
+
+  .my-stack {
+    padding: 0.4rem;
+  }
 }
 </style>

@@ -8,9 +8,9 @@
 
 <script lang="ts" setup>
 defineProps<{
-date: string, 
-position: string, 
-company:string
+  date: string,
+  position: string,
+  company: string
 }>();
 </script>
 
@@ -22,19 +22,43 @@ company:string
   flex-direction: column;
   justify-content: center;
 }
+
 .experience-card h3 {
   font-size: 3.4rem;
   color: var(--text-title);
   margin: 0;
 }
+
 .experience-card p {
   font-size: 1.4rem;
   color: var(--text-title);
   margin: 0.2rem 0;
 }
+
 .experience-card span {
   font-size: 1rem;
   font-weight: 200;
   color: var(--text-title);
+}
+
+@media (max-width: 768px) {
+  
+  .experience-card {
+    height: 7rem;
+    padding: 0.6rem;
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    span {
+      font-size: 0.6rem;
+    }
+
+    p {
+      font-size: 0.7rem;
+    }
+  }
+
 }
 </style>

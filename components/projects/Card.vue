@@ -2,13 +2,13 @@
   <div class="my-project" @mouseenter="showPreview = true" @mouseleave="showPreview = false">
 
     <div class="stacks-header">
-      <h1 class="title-stack">{{ name }}</h1>
+      <h2 class="title-stack">{{ name }}</h2>
     </div>
     <div class="stacks-list">
       <div v-for="(stack, index) in stacks" :key="index" class="stack-item">
-        <div class="row-stack" >
+        <div class="row-stack">
           <span class="stack-indicator"></span>
-          <span>{{ stack }}</span>
+          <span class="stack-name">{{ stack }}</span>
         </div>
         <ProjectsModalPreview :image-src="image" :is-visible="showPreview" :git-url="github"
           :external-url="externalUrl" />
@@ -34,12 +34,12 @@ const showPreview = ref(false);
 </script>
 
 <style scoped lang="css">
-
-.row-stack{
+.row-stack {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
+
 .my-project {
   display: flex;
   flex-direction: column;
@@ -105,7 +105,6 @@ const showPreview = ref(false);
   font-size: 2rem;
   font-weight: 600;
   text-transform: uppercase;
-
 }
 
 .stacks-list {
@@ -124,10 +123,6 @@ const showPreview = ref(false);
 }
 
 
-.stack-item span {
-  font-size: 1.2rem;
-  color: var(--text-title);
-}
 
 .stack-item {
   display: flex;
@@ -137,5 +132,36 @@ const showPreview = ref(false);
 
 .my-project {
   position: relative;
+}
+
+.stack-name {
+  font-size: 1.2rem;
+  color: var(--text-title);
+}
+
+@media (max-width: 768px) {
+  .title-stack {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .stack-name {
+    font-size: 0.4rem;
+  }
+
+  .stack-indicator {
+    height: 6px;
+    width: 6px;
+  }
+
+  .row-stack {
+    gap: 0.2rem;
+  }
+
+  .stacks-list {
+    gap: 0.4rem;
+  }
+
+
 }
 </style>

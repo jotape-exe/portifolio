@@ -26,9 +26,6 @@ const _orientation = orientation || defaultOrientation;
 </script>
 
 <style scoped lang="css">
-.divider {
-  margin: 1rem 0;
-}
 
 .horizontal {
   width: 100%;

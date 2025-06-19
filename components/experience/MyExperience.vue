@@ -1,5 +1,5 @@
 <template>
-  <div class="my-stack">
+  <div class="my-experience">
     <div class="stacks-header">
       <h1>Experiências</h1>
       <AppDivider />
@@ -26,11 +26,12 @@ const experiences = MyExperiences
   margin-bottom: 2rem;
 }
 
-.my-stack {
+.my-experience {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+    margin-top: 2.8rem;
   width: 100%;
   padding: 2rem;
 }
@@ -48,12 +49,19 @@ const experiences = MyExperiences
   justify-content: space-between;
   width: 90%;
   background-color: var(--background);
-  margin-top: 1rem;
 }
 
 .empty-card {
   width: 40rem;
   height: 20rem;
   border-radius: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  .my-experience {
+    padding: 0.4rem;
+  }
+
 }
 </style>

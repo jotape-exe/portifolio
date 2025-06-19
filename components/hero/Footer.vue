@@ -3,18 +3,18 @@
     <h2>Entre em contato</h2>
     <div class="buttons-footer">
       <a href="https://www.linkedin.com/in/joao-psv/" target="_blank">
-        <button class="btn-icon btn-linkedin">
+        <button class="btn-icon btn-action-footer">
           <Icon name="lucide:linkedin" />
         </button>
       </a>
       <a href="mailto:joaoxstone@gmail.com" target="_blank">
-        <button class="btn-icon btn-linkedin">
+        <button class="btn-icon btn-action-footer">
           <Icon name="lucide:mail" />
         </button>
       </a>
 
       <a href="https://github.com/jotape-exe" target="_blank">
-        <button class="btn-icon btn-linkedin">
+        <button class="btn-icon btn-action-footer">
           <Icon name="lucide:github" />
         </button>
       </a>
@@ -66,10 +66,22 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
 
-  .btn-linkedin {
-    font-size: 1.9rem;
-    margin: 2.5rem 0;
+.btn-action-footer {
+  font-size: 1.9rem;
+  margin: 2.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .hero-footer h2 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .btn-action-footer {
+    font-size: 1rem;
+    margin: 1.5rem 0;
   }
 }
 </style>

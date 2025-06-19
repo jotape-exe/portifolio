@@ -12,7 +12,7 @@
 
 <script lang="ts" setup>
 
-const {text} = defineProps<{ text: string }>();
+const { text } = defineProps<{ text: string }>();
 
 
 
@@ -62,5 +62,15 @@ const {text} = defineProps<{ text: string }>();
   50% {
     opacity: 0;
   }
+}
+
+@media (max-width: 768px) {
+  .console-card {
+    font-size: 0.7rem;
+    padding: 0.4rem;
+    max-width: 20rem;
+    margin-top: 1.6rem;
+  }
+
 }
 </style>

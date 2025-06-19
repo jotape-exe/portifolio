@@ -45,6 +45,7 @@ Com uma abordagem orientada ao usuário e resultados, entrego soluções criativ
 .hero-container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
   background-color: var(--background);

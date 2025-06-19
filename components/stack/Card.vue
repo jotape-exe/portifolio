@@ -18,14 +18,22 @@ defineProps<{
   height: 3rem;
   gap: 15px;
   display: flex;
-  
+
   align-items: center;
   justify-content: flex-end;
 }
 
-h3{
+h3 {
   width: fit-content;
   font-weight: normal;
   font-size: 1.5rem;
 }
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {}
 </style>

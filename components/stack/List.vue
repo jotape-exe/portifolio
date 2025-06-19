@@ -1,14 +1,8 @@
 <template>
   <div class="stack-card-list-grid">
-    <motion.div
-      v-for="(stack, i) in stacks"
-      :key="i"
-      class="stack-card"
-      :initial="{ opacity: 0, y: 20 }"
-      :whileInView="{ opacity: 1, y: 0 }"
-      :viewport="{ once: true, margin: '0px', amount: 0.1 }"
-      :transition="{ duration: 0.5, delay: i * 0.1, ease: 'easeOut' }"
-    >
+    <motion.div v-for="(stack, i) in stacks" :key="i" class="stack-card" :initial="{ opacity: 0, y: 20 }"
+      :whileInView="{ opacity: 1, y: 0 }" :viewport="{ once: true, margin: '0px', amount: 0.1 }"
+      :transition="{ duration: 0.5, delay: i * 0.1, ease: 'easeOut' }">
       <StackCard :title="stack.title">
         <template #icon>
           <img v-if="stack?.icon" class="stack-icon" :src="stack.icon" />
@@ -53,16 +47,10 @@ const { stacks } = defineProps(['stacks']);
 }
 
 @media (max-width: 768px) {
-  .stack-card-list-grid {
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: end;
-  }
-}
-
-@media (max-width: 480px) {
-  .stack-card-list-grid {
-    grid-template-columns: 1fr;
-    justify-content: end;
+  .stack-icon {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.2rem;
   }
 }
 </style>

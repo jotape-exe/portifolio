@@ -1,5 +1,5 @@
 <template>
-  <div class="my-stack">
+  <div class="my-projects">
     <div class="stacks-header">
       <h1>Projetos</h1>
       <AppDivider />
@@ -25,13 +25,14 @@ const projects = MyProjects
   width: 90%;
 }
 
-.my-stack {
+.my-projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   padding: 2rem;
+  margin-top: 1.8rem;
 }
 
 .title-stack {
@@ -54,5 +55,16 @@ const projects = MyProjects
   width: 40rem;
   height: 20rem;
   border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    margin-top: 2rem;
+  }
+
+  .my-projects {
+    padding: 0.4rem;
+  }
+
 }
 </style>
