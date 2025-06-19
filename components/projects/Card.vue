@@ -1,9 +1,19 @@
 <template>
   <div class="my-project" @mouseenter="showPreview = true" @mouseleave="showPreview = false">
-
     <div class="stacks-header">
-      <h2 class="title-stack">{{ name }}</h2>
+      <!-- Container para o título e ícone -->
+      <div class="title-container">
+        <h2 class="title-stack">{{ name }}</h2>
+
+        <!-- Ícone com animação -->
+        <motion.div class="action-icon" :animate="{ y: [0, -10, 0] }"
+          :transition="{ repeat: Infinity, duration: 1.2, ease: 'easeInOut' }">
+          <Icon name="ph:hand-tap" class="icon-bounce" />
+        </motion.div>
+      </div>
     </div>
+
+    <!-- Lista de stacks -->
     <div class="stacks-list">
       <div v-for="(stack, index) in stacks" :key="index" class="stack-item">
         <div class="row-stack">
@@ -14,12 +24,13 @@
           :external-url="externalUrl" />
       </div>
     </div>
-
-
   </div>
 </template>
 
+
+
 <script lang="ts" setup>
+import { motion } from 'motion-v';
 import { ref } from 'vue';
 
 const { stacks, name } = defineProps<{
@@ -34,6 +45,12 @@ const showPreview = ref(false);
 </script>
 
 <style scoped lang="css">
+.title-container {
+  position: relative;
+  display: inline-block;
+  /* Permite ajustar o ícone em relação ao texto */
+}
+
 .row-stack {
   display: flex;
   align-items: center;
@@ -139,10 +156,19 @@ const showPreview = ref(false);
   color: var(--text-title);
 }
 
+.icon-bounce {
+  font-size: 1rem;
+  color: var(--text-title);
+}
+
+.action-icon {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .title-stack {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 0.1rem;
   }
 
   .stack-name {
@@ -160,6 +186,15 @@ const showPreview = ref(false);
 
   .stacks-list {
     gap: 0.4rem;
+  }
+
+  .action-icon {
+    position: absolute;
+    top: -1px;
+    right: -17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
 
