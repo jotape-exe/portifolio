@@ -1,4 +1,4 @@
-import izapay from 'public/izapay.png';
+import izapay2 from 'public/izapay2.png';
 import izatecplay from 'public/izatecplay.png';
 
 export const MyProjects = [
@@ -18,7 +18,7 @@ export const MyProjects = [
         name: 'IzaPay',
         externalUrl: 'https://izapay.com.br',
         github: 'https://github.com/izatecbr/org-izatec-pay-web',
-        image: izapay,
+        image: izapay2,
         stacks: [
             'Vue.js',
             'Shadcn UI',

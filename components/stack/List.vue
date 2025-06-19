@@ -1,39 +1,32 @@
 <template>
   <div class="stack-card-list-grid">
-    <StackCard v-for="(stack, index) in stacks" :title="stack.title" :key="index"
-      :class="{ 'animate-visible': visibleItems.includes(index) }" :style="{ transitionDelay: `${index * 100}ms` }"
-      ref="cards">
-      <template #icon>
-        <img v-if="stack?.icon" class="stack-icon" :src="stack.icon" />
-      </template>
-    </StackCard>
+    <motion.div
+      v-for="(stack, i) in stacks"
+      :key="i"
+      class="stack-card"
+      :initial="{ opacity: 0, y: 20 }"
+      :whileInView="{ opacity: 1, y: 0 }"
+      :viewport="{ once: true, margin: '0px', amount: 0.1 }"
+      :transition="{ duration: 0.5, delay: i * 0.1, ease: 'easeOut' }"
+    >
+      <StackCard :title="stack.title">
+        <template #icon>
+          <img v-if="stack?.icon" class="stack-icon" :src="stack.icon" />
+        </template>
+      </StackCard>
+    </motion.div>
   </div>
 </template>
 
+
 <script lang="ts" setup>
+import { motion } from 'motion-v';
+
 
 const { stacks } = defineProps(['stacks']);
-const visibleItems = ref<number[]>([]);
 
-onMounted(() => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        const index = Number(entry.target.getAttribute('data-index'));
-        if (entry.isIntersecting && !visibleItems.value.includes(index)) {
-          visibleItems.value.push(index);
-        }
-      });
-    },
-    { threshold: 0.1 }
-  );
 
-  const cards = document.querySelectorAll('.stack-card');
-  cards.forEach((card, index) => {
-    card.setAttribute('data-index', index.toString());
-    observer.observe(card);
-  });
-});
+
 </script>
 
 <style scoped lang="css">
@@ -45,16 +38,13 @@ onMounted(() => {
   justify-content: end;
 }
 
+
 .stack-card {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.stack-card.animate-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 .stack-icon {
   width: 1.8rem;

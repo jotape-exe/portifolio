@@ -1,27 +1,38 @@
 <template>
     <div class="hero">
-        <div class="hero-title">
+        <!-- Hero Title -->
+        <motion.div class="hero-title" :initial="{ opacity: 0, x: -50 }" :animate="{ opacity: 1, x: 0 }"
+            :transition="{ duration: 0.8, ease: 'easeOut' }">
             <h1 class="title">JOÃO</h1>
             <p class="subtitle">PEDRO</p>
-        </div>
+        </motion.div>
+
         <AppDivider height="1px" color="var(--text-title)" />
-        <span class="developer-title anton-regular">FULLSTACK DEVELOPER</span>
+
+        <!-- Developer Title -->
+        <motion.span class="developer-title anton-regular" :initial="{ opacity: 0, y: 20 }"
+            :animate="{ opacity: 1, y: 0 }" :transition="{ duration: 0.8, delay: 0.4, ease: 'easeOut' }">
+            FULLSTACK DEVELOPER
+        </motion.span>
     </div>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
+import { motion } from 'motion-v';
+
+// Se necessário, importe o componente motion (auto-import costuma funcionar)
+// import { motion } from 'motion-v';
 </script>
 
-<style lang="css" scoped>
+<style scoped lang="css">
 .hero-title {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: flex-start;
-    gap: 0rem;
+    gap: 0;
 }
 
-.developer-title{
+.developer-title {
     font-size: 4rem;
 }
 
@@ -33,17 +44,17 @@
 .title {
     font-size: 7rem;
     font-weight: bold;
+    line-height: 1.8rem;
     margin: 0;
     color: var(--text-title);
-    line-height: 1.8rem;
     text-align: end;
 }
 
 .subtitle {
     font-size: 7rem;
     font-weight: bold;
-    text-align: end;
     margin: 0;
     color: var(--text-action);
+    text-align: end;
 }
 </style>

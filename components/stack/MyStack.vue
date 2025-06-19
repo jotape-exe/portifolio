@@ -5,25 +5,39 @@
       <AppDivider />
     </div>
     <div class="hero-container">
-      <h3 class="title-stack">frontend</h3>
+      <motion.div :initial="{ opacity: 0, y: 20 }" :whileInView="{ opacity: 1, y: 0 }"
+        :viewport="{ once: true, margin: '0px', amount: 0.1 }" :transition="{ duration: 0.5, ease: 'easeOut' }">
+        <h3 class="title-stack">frontend</h3>
+      </motion.div>
       <StackList :stacks="frontend" />
     </div>
     <div class="hero-container">
-      <h3 class="title-stack ">backend</h3>
+      <motion.div :initial="{ opacity: 0, y: 20 }" :whileInView="{ opacity: 1, y: 0 }"
+        :viewport="{ once: true, margin: '0px', amount: 0.1 }" :transition="{ duration: 0.5, ease: 'easeOut' }">
+        <h3 class="title-stack">backend</h3>
+      </motion.div>
       <StackList :stacks="backend" />
     </div>
     <div class="hero-container">
-      <h3 class="title-stack ">database</h3>
+      <motion.div :initial="{ opacity: 0, y: 20 }" :whileInView="{ opacity: 1, y: 0 }"
+        :viewport="{ once: true, margin: '0px', amount: 0.1 }" :transition="{ duration: 0.5, ease: 'easeOut' }">
+        <h3 class="title-stack">database</h3>
+      </motion.div>
       <StackList :stacks="database" />
     </div>
     <div class="hero-container">
-      <h3 class="title-stack ">tools</h3>
+      <motion.div :initial="{ opacity: 0, y: 20 }" :whileInView="{ opacity: 1, y: 0 }"
+        :viewport="{ once: true, margin: '0px', amount: 0.1 }" :transition="{ duration: 0.5, ease: 'easeOut' }">
+        <h3 class="title-stack">tools</h3>
+      </motion.div>
       <StackList :stacks="tools" />
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { motion } from 'motion-v';
+
 const frontend = [
   { title: 'Javascript', icon: 'https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor' },
   { title: 'Typescript', icon: 'https://icongr.am/devicon/typescript-original.svg?size=128&color=currentColor' },
@@ -79,7 +93,7 @@ const tools = [
   font-size: 3.2rem;
   font-weight: 500;
   text-transform: uppercase;
-  
+
 }
 
 .hero-container {
