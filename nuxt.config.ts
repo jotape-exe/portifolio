@@ -3,7 +3,10 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
   modules: ['@nuxt/icon', 'motion-v/nuxt', '@nuxtjs/i18n'],
-  css: ['~/assets/css/main.css','~/assets/css/fonts.css', '~/assets/css/colors.css', '~/assets/css/design-system.css'],
+  i18n: {
+    vueI18n: './i18n.config.ts'
+  },
+  css: ['~/assets/css/main.css', '~/assets/css/fonts.css', '~/assets/css/colors.css', '~/assets/css/design-system.css'],
   app: {
     head: {
       link: [
