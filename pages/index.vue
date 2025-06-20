@@ -9,6 +9,7 @@ Com uma abordagem orientada ao usuário e resultados, entrego soluções criativ
 <template>
   <header class="header">
     <AppToggleTheme />
+    <AppLangSwitcher />
   </header>
   <section class="hero-container">
     <HeroTitle />
@@ -30,6 +31,7 @@ Com uma abordagem orientada ao usuário e resultados, entrego soluções criativ
   align-items: start;
   justify-content: flex-end;
   width: 100%;
+  gap: 0.5rem;
 }
 
 .scroll-container {
