@@ -26,19 +26,19 @@ const { stacks } = defineProps(['stacks']);
 <style scoped lang="css">
 .stack-card-list-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, max-content); 
   gap: 1rem;
-  align-items: flex-end;
-  justify-content: end;
+  justify-content: flex-end; 
+  align-items: center; 
+  width: 100%; 
 }
-
 
 .stack-card {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-end; 
+  width: 100%; 
 }
-
 
 .stack-icon {
   width: 1.8rem;
@@ -47,10 +47,20 @@ const { stacks } = defineProps(['stacks']);
 }
 
 @media (max-width: 768px) {
+
+
   .stack-icon {
     width: 1rem;
     height: 1rem;
-    border-radius: 0.2rem;
   }
 }
+
+@media (max-width: 480px) {
+
+
+  .stack-card {
+    justify-content: center; 
+  }
+}
+
 </style>

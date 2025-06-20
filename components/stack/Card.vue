@@ -15,8 +15,8 @@ defineProps<{
 
 <style scoped lang="css">
 .stack-card {
-  height: 3rem;
-  gap: 15px;
+  height: 2rem;
+  gap: 10px;
   display: flex;
 
   align-items: center;
@@ -32,6 +32,10 @@ h3 {
 @media (max-width: 768px) {
   h3 {
     font-size: 0.7rem;
+  }
+
+  .stack-card {
+    height: 1rem;
   }
 }
 

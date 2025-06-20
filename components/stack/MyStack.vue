@@ -108,6 +108,7 @@ const tools = [
 @media (max-width: 768px) {
   .title-stack {
     font-size: 1.4rem;
+    margin-bottom: 0.8rem;
     font-weight: 500;
     text-transform: uppercase;
   }

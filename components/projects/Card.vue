@@ -1,33 +1,30 @@
 <template>
   <div class="my-project" @mouseenter="showPreview = true" @mouseleave="showPreview = false">
     <div class="stacks-header">
-      <!-- Container para o título e ícone -->
       <div class="title-container">
         <h2 class="title-stack">{{ name }}</h2>
 
-        <!-- Ícone com animação -->
-        <motion.div class="action-icon" :animate="{ y: [0, -10, 0] }"
-          :transition="{ repeat: Infinity, duration: 1.2, ease: 'easeInOut' }">
-          <Icon name="ph:hand-tap" class="icon-bounce" />
+        <motion.div
+          class="action-icon"
+          :animate="{ scale: [1, 1.2, 0.7] }"
+          :transition="{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }"
+        >
+          <Icon name="ph:hand-tap" class="icon-pulse" />
         </motion.div>
       </div>
     </div>
 
-    <!-- Lista de stacks -->
     <div class="stacks-list">
       <div v-for="(stack, index) in stacks" :key="index" class="stack-item">
         <div class="row-stack">
           <span class="stack-indicator"></span>
           <span class="stack-name">{{ stack }}</span>
         </div>
-        <ProjectsModalPreview :image-src="image" :is-visible="showPreview" :git-url="github"
-          :external-url="externalUrl" />
+        <ProjectsModalPreview :image-src="image" :is-visible="showPreview" :git-url="github" :external-url="externalUrl" />
       </div>
     </div>
   </div>
 </template>
-
-
 
 <script lang="ts" setup>
 import { motion } from 'motion-v';
@@ -48,7 +45,6 @@ const showPreview = ref(false);
 .title-container {
   position: relative;
   display: inline-block;
-  /* Permite ajustar o ícone em relação ao texto */
 }
 
 .row-stack {
