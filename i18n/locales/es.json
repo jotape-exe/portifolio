@@ -1,0 +1,37 @@
+{
+    "home": {
+        "consoleText": "Desarrollador de software especializado en crear interfaces responsivas y backends escalables, priorizando calidad y rendimiento.\n\nCon un enfoque orientado al usuario y a los resultados, entrego soluciones creativas que conectan tecnología y negocio para experiencias fluidas e impactantes.",
+        "stack": "Stack",
+        "experiences": "Experiencia",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
+    "projects": {
+        "izaplay": {
+            "description": "Una plataforma de contenidos sobre programación, enfocada en preparar a los estudiantes para el mercado laboral, con énfasis en Java y su ecosistema."
+        },
+        "izapay": {
+            "description": "Plataforma de gestión de pagos simplificada"
+        }
+    },
+    "experiences": {
+        "sasgp": {
+            "position": "Desarrollador Full Stack",
+            "date": "2026 — Presente",
+            "period": "Actual",
+            "description": "Trabajo en el desarrollo full-stack de soluciones de gestión organizacional y procesos internos, creando interfaces modernas, APIs y arquitecturas escalables con enfoque en usabilidad, rendimiento y confiabilidad."
+        },
+        "izatec": {
+            "position": "Desarrollador Full Stack",
+            "date": "2023 — Presente",
+            "period": "3+ años",
+            "description": "Desarrollo completo del lado cliente de las plataformas IzaTec Content e IzaTec Pay, implementando arquitectura frontend escalable, gestión de estado con Pinia, seguridad de rutas y optimización SSR en módulos de alto volumen de contenido."
+        },
+        "aml": {
+            "position": "Desarrollador Frontend",
+            "date": "2024 — 2025",
+            "period": "1 año",
+            "description": "Desarrollo de AIR, plataforma de análisis y medición de riesgos financieros, reputacionales y jurídicos, con enfoque en informes, evidencias y cumplimiento normativo (PLA-FT)."
+        }
+    }
+}

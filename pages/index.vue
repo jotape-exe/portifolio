@@ -1,9 +1,5 @@
 <script setup lang="ts">
 
-const consoleText = `Desenvolvedor Fullstack especializado em criar interfaces responsivas e backends escaláveis, priorizando qualidade e desempenho.
-
-Com uma abordagem orientada ao usuário e resultados, entrego soluções criativas que unem tecnologia e negócios para experiências fluidas e impactantes.`
-
 </script>
 
 <template>
@@ -14,7 +10,7 @@ Com uma abordagem orientada ao usuário e resultados, entrego soluções criativ
   <section class="hero-container">
     <HeroTitle />
     <div class="scroll-container">
-      <ConsoleCard :text="consoleText" />
+      <ConsoleCard />
     </div>
   </section>
   <section>

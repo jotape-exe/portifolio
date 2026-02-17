@@ -37,6 +37,11 @@
     --card: var(--gray-100);
     --border: #d1d5db;
     --radius: 8px;
+
+
+    /* Console */
+    --background-console: var(--gray-200);
+    --text-console: var(--gray-800);
 }
 
 :root.dark {
@@ -80,6 +85,10 @@
     --card: var(--gray-800);
     --border: #374151;
     --radius: 8px;
+
+    /* Console */
+    --background-console: var(--gray-800);
+    --text-console: var(--gray-200);
 }
 
 :root,

@@ -1,6 +1,5 @@
 <template>
     <div class="hero">
-        <!-- Hero Title -->
         <motion.div class="hero-title" :initial="{ opacity: 0, x: -50 }" :animate="{ opacity: 1, x: 0 }"
             :transition="{ duration: 0.8, ease: 'easeOut' }">
             <h1 class="title">JOÃO</h1>
@@ -9,10 +8,9 @@
 
         <AppDivider height="1px" color="var(--text-title)" />
 
-        <!-- Developer Title -->
         <motion.span class="developer-title anton-regular" :initial="{ opacity: 0, y: 20 }"
             :animate="{ opacity: 1, y: 0 }" :transition="{ duration: 0.8, delay: 0.4, ease: 'easeOut' }">
-            FULLSTACK DEVELOPER
+            SOFTWARE DEVELOPER
         </motion.span>
     </div>
 </template>
@@ -20,8 +18,6 @@
 <script setup lang="ts">
 import { motion } from 'motion-v';
 
-// Se necessário, importe o componente motion (auto-import costuma funcionar)
-// import { motion } from 'motion-v';
 </script>
 
 <style scoped lang="css">

@@ -1,7 +1,7 @@
 <template>
   <div class="my-projects">
     <div class="stacks-header">
-      <h1>Projetos</h1>
+      <h1>{{ $t('home.projects') }}</h1>
       <AppDivider />
     </div>
     <div class="hero-container">

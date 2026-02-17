@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/icon', 'motion-v/nuxt', '@nuxtjs/i18n'],
   i18n: {
-    vueI18n: './i18n.config.ts'
+    vueI18n: '~/i18n/i18n.config.ts'
   },
   css: ['~/assets/css/main.css', '~/assets/css/fonts.css', '~/assets/css/colors.css', '~/assets/css/design-system.css'],
   app: {

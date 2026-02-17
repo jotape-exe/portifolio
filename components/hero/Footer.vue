@@ -1,6 +1,6 @@
 <template>
   <footer class="hero-footer">
-    <h2>Entre em contato</h2>
+    <h2>{{ $t('home.contact') }}</h2>
     <div class="buttons-footer">
       <a href="https://www.linkedin.com/in/joao-psv/" target="_blank">
         <button class="btn-icon btn-action-footer">

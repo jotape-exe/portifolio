@@ -1,7 +1,7 @@
 <template>
   <div class="my-experience">
     <div class="stacks-header">
-      <h1>Experiências</h1>
+      <h1>{{ $t('home.experiences') }}</h1>
       <AppDivider />
     </div>
     <div class="hero-container">

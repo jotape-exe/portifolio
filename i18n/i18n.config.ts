@@ -3,19 +3,19 @@ import en from "./locales/en.json";
 import es from "./locales/es.json";
 
 export const languages = [
-  { language: "pt-BR", title: "Portugês BR" },
-  { language: "en-US", title: "English" },
-  { language: "es-ES", title: "Spanish" }
+  { language: "pt", title: "Portugês" },
+  { language: "en", title: "English" },
+  { language: "es", title: "Spanish" }
 ];
 
 const messages = {
-  "en-US": en,
-  "pt-BR": ptBR,
-  "es-ES": es
+  "en": en,
+  "pt": ptBR,
+  "es": es
 };
 
 export default defineI18nConfig(() => ({
   legacy: false,
-  locale: "pt-BR",
+  locale: "pt",
   messages: messages,
 }));

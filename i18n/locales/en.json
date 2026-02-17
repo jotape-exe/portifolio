@@ -1,0 +1,37 @@
+{
+    "home": {
+        "consoleText": "Software developer specialized in building responsive interfaces and scalable backends, prioritizing quality and performance.\n\nWith a user- and results-oriented approach, I deliver creative solutions that connect technology and business to create fluid and impactful experiences.",
+        "stack": "Tech stack",
+        "experiences": "Experience",
+        "projects": "Projects",
+        "contact": "Get in touch"
+    },
+    "projects": {
+        "izaplay": {
+            "description": "A content platform about programming, focused on preparing students for the job market, with an emphasis on Java and its ecosystem."
+        },
+        "izapay": {
+            "description": "Simplified payment management platform"
+        }
+    },
+    "experiences": {
+        "sasgp": {
+            "position": "Full Stack Developer",
+            "date": "2026 — Present",
+            "period": "Current",
+            "description": "I work on full-stack development of organizational management and internal process solutions, creating modern interfaces, APIs, and scalable architectures focused on usability, performance, and reliability."
+        },
+        "izatec": {
+            "position": "Full Stack Developer",
+            "date": "2023 — Present",
+            "period": "3+ years",
+            "description": "End-to-end client-side development of IzaTec Content and IzaTec Pay platforms, implementing scalable frontend architecture, Pinia state management, route security, and SSR optimization in high-volume content modules."
+        },
+        "aml": {
+            "position": "Frontend Developer",
+            "date": "2024 — 2025",
+            "period": "1 year",
+            "description": "Development of AIR, a platform for financial, reputational, and legal risk analysis and measurement, focused on reporting, evidence, and regulatory compliance (AML-CFT)."
+        }
+    }
+}

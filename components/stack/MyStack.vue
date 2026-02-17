@@ -1,7 +1,7 @@
 <template>
   <div class="my-stack">
     <div class="stacks-header">
-      <h1>Minha Stack</h1>
+      <h1>{{ $t('home.stack') }}</h1>
       <AppDivider />
     </div>
     <div class="hero-container">
@@ -37,36 +37,8 @@
 
 <script lang="ts" setup>
 import { motion } from 'motion-v';
+import { backend, database, frontend, tools } from '~/constants/my-stack.constant';
 
-const frontend = [
-  { title: 'Javascript', icon: 'https://icongr.am/devicon/javascript-original.svg?size=128&color=currentColor' },
-  { title: 'Typescript', icon: 'https://icongr.am/devicon/typescript-original.svg?size=128&color=currentColor' },
-  { title: 'Vue.js', icon: 'https://icongr.am/devicon/vuejs-original.svg?size=128&color=currentColor' },
-  { title: 'Pinia', icon: 'https://cdn.worldvectorlogo.com/logos/pinia-1.svg' },
-  { title: 'Nuxt.js', icon: 'https://devicon-website.vercel.app/api/nuxtjs/original.svg' },
-  { title: 'React', icon: 'https://icongr.am/devicon/react-original.svg?size=128&color=currentColor' },
-  /* { title: 'React Native', icon: 'https://cdn.worldvectorlogo.com/logos/react-native-1.svg' },
-  { title: 'Tailwind CSS', icon: 'https://devicon-website.vercel.app/api/tailwindcss/plain.svg' }*/
-];
-
-const backend = [
-  { title: 'Java', icon: 'https://icongr.am/devicon/java-original.svg?size=128&color=currentColor' },
-  { title: 'Kotlin', icon: 'https://cdn.worldvectorlogo.com/logos/kotlin-2.svg' },
-  { title: 'Spring', icon: 'https://devicon-website.vercel.app/api/spring/original.svg' },
-]
-
-const database = [
-  { title: 'PostgreSQL', icon: 'https://icongr.am/devicon/postgresql-original.svg?size=128&color=currentColor' },
-  { title: 'MySQL', icon: 'https://icongr.am/devicon/mysql-original.svg?size=128&color=currentColor' },
-  { title: 'MongoDB', icon: 'https://icongr.am/devicon/mongodb-original.svg?size=128&color=currentColor' }
-]
-
-const tools = [
-  { title: 'Git', icon: 'https://icongr.am/devicon/git-original.svg?size=128&color=currentColor' },
-  { title: 'Docker', icon: 'https://icongr.am/devicon/docker-original.svg?size=128&color=currentColor' },
-  { title: 'Netlify', icon: 'https://cdn.worldvectorlogo.com/logos/netlify.svg' }
-
-]
 </script>
 
 <style lang="css" scoped>
